@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ランサムウェア体験TOP</title>
+    <link rel="icon" href="content/favicon.png">
+    <link rel="stylesheet" href="css/cryptEx.css">
+</head>
+<body>
+
+    <header>
+        <h1>ネット詐欺体験アプリ</h1>
+        <nav>
+            <ul class="menu">
+                <li><a href="index.html">ホーム</a></li>
+                <li class="submenu">
+                    <a href="#">各種詐欺体験</a>
+                    <ul>
+                        <li><a href="oneclickEx.html">ワンクリック詐欺</a></li>
+                        <li><a href="supportEx.html">サポート詐欺</a></li>
+                        <li><a href="cryptEx.html">ランサムウェア</a></li>
+                    </ul>
+                </li>
+                <li><a href="question.html">利用者アンケート</a></li>
+                <li><a href="contact.html">参考文献・出典</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div>
+        <h1>ランサムウェア</h1>
+        <h2>ランサムウェアの特徴</h2>
+        <p>パソコンやスマートフォンをロックして使えなくする悪意のあるソフトウェアをダウンロードさせ、 ロック解除のために金銭（身代金）を支払うよう求めてくる手口です。 
+            支払期限までの残り時間をカウントダウンして請求する手口のため、身代金詐欺と呼ばれています。 
+            お金を支払ってもパソコンの制限を解除できるとは限らず金銭を盗まれてパソコンの制限は解除されず泣き寝入りとなるケースもあります。<br>　</p>
+        <h2>ランサムウェアの原因</h2>
+        <p>サポート詐欺に遭遇する原因は主にサイト上の偽広告のクリックや、偽サイトへのアクセスです。<br>　</p>
+        <h2>ランサムウェアの体験</h2>
+        <p>ランサムウェアがどういったものか知ったところで、実際にどういった表現や手口を使用するのか体験してみましょう。<br>　<br>
+            初めに違法動画ダウンロードサイトを模した画面に移動するので、指示に従いダウンロードを試みてください。<br>
+            その後、右上にダウンロード完了のポップアップが出るのでクリックしてファイルを開いてください。<br>
+            終了する際は実際の遭遇時と同じようにブラウザを閉じてください。<br>　<br>
+            体験アプリご利用後はアンケートページからアンケートにご協力いただけたら幸いです。<br>　</p>
+        <button id="runButton">ランサムウェアを体験する</button>
+</body>
+<script>
+        document.getElementById("runButton").addEventListener("click", function() {
+        // ここでリンク先のURLを指定する
+        var destination = "cryptapp.html";
+        // リダイレクト
+        window.open(destination, '_blank');
+    });
+</script>
+</html>
