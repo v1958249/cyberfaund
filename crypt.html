@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>映画無料ダウンロード　えいが村</title>
+  <link rel="stylesheet" href="css/crypt.css" media="screen and (min-width: 770px)">
+  <link rel="icon" href="content/favicon.png">
+</head>
+<body>
+  <h1>ランサムウェア体験アプリ　サンプル</h1>
+  <p>実際に暗号化を施すアプリで、フォルダロックの怖さを体験してみましょう。</p>
+  <button id="download-btn" onclick="encryptFiles()">暗号化ウィルス実行</button>
+  <p>※事前にパッケージ内のフォルダ「neko」が正常であることを確認してください。</p>
+  <p>　開きたいファイルを選択して右クリックのメニューから開けます。</p>
+  <button id="open-btn1">フォルダを確認</button></p>
+  <div id="fd"></div>
+
+
+  <div id="modal" class="modal">
+    <div class="modal-content">
+        
+        <p>このPCは悪意のあるマルウェアに感染</p>
+        <span>
+            <p>あなたのPC内のフォルダ<br>・neko<br>内のファイルをロックしました。<br>直ちに下記の電話番号にお電話して解決</p>
+            <p>TEL　0000-1111-2222</p>
+        </span>
+        <button id="close">クイックサポート</button>
+    </div>
+  </div>
+
+  <div id="answer" class="answer">
+    <div class="answer-content">
+        <h2>ランサムウェア　解説</h2>
+        <exp>
+            <p>このプログラムがあるフォルダ内の「neko」フォルダを確認してみてください。　　<button id="open-btn2">フォルダを確認</button></p>
+            <p>ファイルが破損して開けなくなっています。</p>
+            <p>特別なアプリをインストールしているわけではありませんが、実際にファイルのデータを書き換えてロックしています。</p>
+            <p>本来は複雑なアプリをインストールされ、PCのロックのほかデータを盗まれる可能性もあります。</p>
+            <p>サイトを開くだけでインストールされることはないので、<span>怪しいサイトではクリックしないようにしましょう。</span></p>
+            <p>もしインストールしてしまっても、画面上の番号ではなくすぐに専門家や警察に連絡しましょう。</p>
+            <p>家庭内や職場でローカルで接続されているPCがある場合、<span>LANケーブルを抜いて他のPCへ干渉されるのを防ぎましょう。</span></p>
+            <p>このアプリでは下のボタンをクリックするとファイルは元に戻ります。</p>
+        </exp>
+        <button id="initialize-btn" onclick="decryptFiles()">ファイルロック解除</button>
+    </div>
+  </div>
+  <script src="js/crypt.js"></script>
+</body>
+</html>
